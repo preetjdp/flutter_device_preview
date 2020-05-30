@@ -456,6 +456,7 @@ class DevicePreviewState extends State<DevicePreview> {
             OverlayEntry(builder: (context) {
               return MediaQueryObserver(
                 child: Builder(
+                  key: GlobalKey(),
                   builder: (context) {
                     final style = DevicePreviewTheme.of(context);
                     Widget screen = Container(
